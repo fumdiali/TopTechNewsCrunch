@@ -26,7 +26,7 @@ export default class HomeScreen extends Component {
     }
 
     componentDidMount(){
-        return fetch('https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=51a2bdde808e4355aeb084e6e0ead725')
+        return fetch('https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=API_KEY')
                     .then((response) => response.json())
                     .then((responseJson) => {
                         this.setState({
